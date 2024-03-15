@@ -9,7 +9,7 @@
       "calories": "320 calories"
     },
     {
-      "recipe_image": "spaghetti_bolognese.jpg",
+      "recipe_image": "https://as1.ftcdn.net/v2/jpg/05/85/96/36/1000_F_585963607_xQsj0pNYSRoT4dzKFXqJyUaj5TrMcLY9.jpg",
       "recipe_id": "002",
       "recipe_name": "Spaghetti Bolognese",
       "short_description": "A hearty Italian pasta dish with rich tomato sauce and minced beef.",
@@ -18,7 +18,7 @@
       "calories": "480 calories"
     },
     {
-      "recipe_image": "vegetable_stir_fry.jpg",
+      "recipe_image": "https://as1.ftcdn.net/v2/jpg/05/85/96/36/1000_F_585963607_xQsj0pNYSRoT4dzKFXqJyUaj5TrMcLY9.jpg",
       "recipe_id": "003",
       "recipe_name": "Vegetable Stir Fry",
       "short_description": "A colorful and nutritious mix of assorted vegetables stir-fried to perfection.",
@@ -27,7 +27,7 @@
       "calories": "250 calories"
     },
     {
-      "recipe_image": "caesar_salad.jpg",
+      "recipe_image": "https://as1.ftcdn.net/v2/jpg/05/85/96/36/1000_F_585963607_xQsj0pNYSRoT4dzKFXqJyUaj5TrMcLY9.jpg",
       "recipe_id": "004",
       "recipe_name": "Caesar Salad",
       "short_description": "A classic salad with crisp romaine lettuce, crunchy croutons, and tangy Caesar dressing.",
@@ -36,7 +36,7 @@
       "calories": "180 calories"
     },
     {
-      "recipe_image": "pan_seared_salmon.jpg",
+      "recipe_image": "https://as1.ftcdn.net/v2/jpg/05/85/96/36/1000_F_585963607_xQsj0pNYSRoT4dzKFXqJyUaj5TrMcLY9.jpg",
       "recipe_id": "005",
       "recipe_name": "Pan-Seared Salmon",
       "short_description": "Fresh salmon fillets pan-seared to perfection with a lemon herb butter sauce.",
@@ -45,7 +45,7 @@
       "calories": "350 calories"
     },
     {
-      "recipe_image": "mushroom_risotto.jpg",
+      "recipe_image": "https://as1.ftcdn.net/v2/jpg/05/85/96/36/1000_F_585963607_xQsj0pNYSRoT4dzKFXqJyUaj5TrMcLY9.jpg",
       "recipe_id": "006",
       "recipe_name": "Mushroom Risotto",
       "short_description": "Creamy Italian rice dish cooked with savory mushrooms and Parmesan cheese.",

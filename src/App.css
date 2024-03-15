@@ -8,14 +8,26 @@
 }
 
 .cart-container{
+  text-align: center;
   width: 350px;
   box-shadow: 4px 4px 8px gray;
 }
-
+.cart-container{
+  border: 2px solid rgb(172, 166, 166);
+  height: max-content;
+  border-radius: 4%;
+  margin-left: 20px;
+  
+}
+.cook-container{
+  display: flex;
+  justify-content: space-around;
+}
 
 
 
 .time{
   display: flex;
   justify-content: space-around;
+  gap: 8px;
 }

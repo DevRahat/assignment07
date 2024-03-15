@@ -6,11 +6,11 @@ const SingleProduct = ({product}) => {
         <div>
             <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                <img src="https://as1.ftcdn.net/v2/jpg/05/85/96/36/1000_F_585963607_xQsj0pNYSRoT4dzKFXqJyUaj5TrMcLY9.jpg" alt="Shoes" class="rounded-xl" />
+                <img src={product.recipe_image} alt="Shoes" class="rounded-xl" />
                 </figure>
             <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 class="card-title">{product.recipe_name}</h2>
+            <p>{product.short_description}</p>
              <hr />
              <div>
                  <ol>
@@ -19,8 +19,8 @@ const SingleProduct = ({product}) => {
                  </ol>
                 </div>
         <div className='time'>
-            <p>time</p>
-            <p>caloties</p>
+            <p>{product.preparing_time}</p>
+            <p>{product.calories}</p>
         </div>
 
     <div class="card-actions">

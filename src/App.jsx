@@ -46,7 +46,23 @@ function App() {
 
           </div>
           <div className='cart-container'>
-              <h1>Cart</h1>
+              <div className='cook'>
+                  <h3>Want to cook: </h3>
+                  <hr />
+                  <div className='cook-container'>
+                    <p>Name</p>
+                    <p>Time</p>
+                    <p>Calories</p>
+                  </div>
+              </div>
+              <div className='cooking:'>
+                  <h3>Currently cooking:</h3>
+                  <div className='cook-container'>
+                    <p>Name</p>
+                    <p>Time</p>
+                    <p>Calories</p>
+                  </div>
+              </div>
           </div>
       </div>
     </>
