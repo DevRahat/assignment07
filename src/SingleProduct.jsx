@@ -1,7 +1,7 @@
 import React from 'react';
 
-const SingleProduct = ({product}) => {
-    console.log(product);
+const SingleProduct = ({product,handleCart}) => {
+    
     return (
         <div>
             <div class="card w-96 bg-base-100 shadow-xl">
@@ -24,7 +24,7 @@ const SingleProduct = ({product}) => {
         </div>
 
     <div class="card-actions">
-      <button class="btn btn-primary">Buy Now</button>
+      <button onClick={(e) =>handleCart(product)} class="btn btn-primary">Buy Now</button>
     </div>
   </div>
 </div>
