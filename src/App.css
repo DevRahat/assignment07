@@ -27,8 +27,8 @@
   padding-bottom: 5px;
 }
 .cards-container{
-  display: grid;
-
+  display: gird;
+  
 }
 /* .cook-container{
   display: flex;

@@ -25,23 +25,29 @@ function App() {
       alert("Already Exist");
     }
   }
-  console.log(products);
+  const handleDelete= (id) =>{
+    const newCart=cart.filter(item=> item.id!=id);
+    setCart(newCart);
+  }
+
+
+  
   return (
     <>
       
-      <div className='main'>
-        <div>
-        <div class="navbar bg-base-100">
-  <div class="flex-1">
-    <a class="btn btn-ghost text-xl">Recipe Garden</a>
+      <div className='main '>
+      <div className='navbar'>
+        <div className="navbar bg-base-100">
+  <div className="flex-1">
+    <a className="btn btn-ghost text-xl">Recipe Garden</a>
   </div>
-  <div class="flex-none gap-2">
-    <div class="form-control">
+  <div className="flex-none gap-2">
+    <div className="form-control">
       <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
     </div>
-    <div class="dropdown dropdown-end">
+    <div className="dropdown dropdown-end">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-        <div class="w-10 rounded-full">
+        <div className="w-10 rounded-full">
           <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
         </div>
       </div>
@@ -57,11 +63,19 @@ function App() {
       </ul>
     </div>
   </div>
-</div>
+      </div>
+      </div>
 
-        </div>
+      {/* Banner section */}
+      <div className='banner-container'> 
 
-      <div className='main-container'>
+      </div>
+
+
+        <h2 className='Body-headings text-center font-extrabold'>Our Recipes</h2>
+        <p className='body-text text-center'>Have a look to all of our Recipes & chose your's fav one. <br></br> We are always at your service </p>
+        <div className='main-container'>
+        
           <div className='cards-container'>
           {
             products.map(pd=> <SingleProduct product={pd} handleCart={handleCart}></SingleProduct>)
@@ -74,12 +88,13 @@ function App() {
               
               <div className='cart-info'>
               {
-                cart.map((item)=>(
+                cart.map((item,index)=>(
                   <div className='cart-info2'>
+                    <p>{index+1}</p>
                       <h5>{item.recipe_name}</h5>
                       <h5>{item.preparing_time}</h5>
                       <h5>{item.calories}</h5>
-                      <button className='btn-primary bg-green-500 border rounded-xl text-white'>Preparing</button>
+                      <button onClick={()=>handleDelete(item.id)} className='btn-primary bg-green-500 border rounded-xl text-white'>Preparing</button>
                       
                   </div>
                 ))}
